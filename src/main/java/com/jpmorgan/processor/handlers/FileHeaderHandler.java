@@ -80,6 +80,8 @@ public class FileHeaderHandler extends FileProcessorHandler {
             logger.warn("Header Metadata is missing. Aborting");
             fileSystemUtils.moveFileToNewState(FileSystemUtils.FILE_UPLOAD_DIR,
                     FileSystemUtils.FILE_FAILED_DIR, fileDto.getRequestId());
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST,
+                    "Whole file was rejected because none of the header was found");
         }
     }
 
