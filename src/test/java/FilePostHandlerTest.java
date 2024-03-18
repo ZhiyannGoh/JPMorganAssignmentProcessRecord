@@ -70,9 +70,6 @@ public class FilePostHandlerTest {
 
         filePostHandler.handleRequest(fileDtoMock);
 
-        @SuppressWarnings("unchecked")
-        ArgumentCaptor<List<BankCodeWithUniqueCustomer>> sortedRecordCaptor =
-                ArgumentCaptor.forClass(List.class);
         verify(fileSystemUtilsMock, times(1)).writeAggregatedData(any(), any());
     }
 }
