@@ -38,7 +38,6 @@ public class FileSystemUtils {
 
     public void writeAggregatedData(List<BankCodeWithUniqueCustomer> outputList, FileDto fileDto) {
         File f = new File(FILE_COMPLETED_DIR + fileDto.getRequestId());
-        System.out.println(f.getAbsolutePath());
         try {
             f.createNewFile();
         } catch (IOException e) {
