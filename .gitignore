@@ -25,6 +25,7 @@ replay_pid*
 
 # resource file
 */target/**
+target/
 completed/
 upload/
 failed/
