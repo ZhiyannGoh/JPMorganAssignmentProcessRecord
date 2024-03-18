@@ -28,19 +28,3 @@ public class UploadFileApi {
     }
 
 }
-
-/**
- *
- * try (BufferedReader br = new BufferedReader(new InputStreamReader(file.getInputStream()))) {
- * String header = br.readLine(); System.out.println(header); } catch (IOException e) {
- * e.printStackTrace(); }
- *
- * Path path = Path.of("src/main/resources/" + file.getOriginalFilename()); file.transferTo(path);
- *
- * String fileBaseName = FilenameUtils.getBaseName(file.getOriginalFilename());
- *
- * FileUploadResponse fileUploadResponse =
- * FileUploadResponse.builder().fileName(file.getOriginalFilename())
- * .fileUploadRequestId(fileBaseName + "_" + System.currentTimeMillis())
- * .fileStatus(FileStatus.IN_PROGRESS).build(); return ResponseEntity.ok(fileUploadResponse);
- **/

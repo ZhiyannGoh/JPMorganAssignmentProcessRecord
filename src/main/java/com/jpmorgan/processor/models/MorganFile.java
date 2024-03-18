@@ -8,8 +8,11 @@ import lombok.Data;
 public class MorganFile {
 
     private String custName;
+
     private String custID;
+
     private String countryCode;
+    
     private String bankCode;
 
 }

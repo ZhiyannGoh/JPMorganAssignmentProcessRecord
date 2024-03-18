@@ -41,7 +41,7 @@ public class RecordProducer implements Runnable {
             while ((record = br.readLine()) != null) {
                 if (StringUtils.isNotBlank(record)) {
                     recordQueue.put(record);
-                    // logger.info("Produced: " + record);
+                    logger.debug("Produced: " + record);
                 }
             }
 
@@ -49,7 +49,7 @@ public class RecordProducer implements Runnable {
                 recordQueue.put(poisonPill);
             }
 
-            // logger.info("Stopping");
+            logger.debug("Stopping");
             return;
 
         } catch (InterruptedException e) {

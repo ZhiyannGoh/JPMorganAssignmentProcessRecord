@@ -7,10 +7,11 @@ import lombok.Getter;
 @Getter
 public enum FileHeader {
 
-    CUSTOMER_NAME("Customer Name"),
-    CUSTOMER_ID("Customer ID"),
-    COUNTRY_CODE("Country Code"),
-    BANK_CODE("Bank Code");
+    // This was created because of the requirement that the input is not guaranteed
+    // Assumed that not guaranteed means columns can be in any sequence
+
+    CUSTOMER_NAME("Customer Name"), CUSTOMER_ID("Customer ID"), COUNTRY_CODE(
+            "Country Code"), BANK_CODE("Bank Code");
 
     String headerInFile;
 
@@ -18,11 +19,10 @@ public enum FileHeader {
         this.headerInFile = headerInFile;
     }
 
-    public static Optional<FileHeader> getFileHeaderEnumByValue(String fileHeader){
-        return EnumUtils.getEnumList(FileHeader.class)
-            .stream()
-            .filter(enumFileHeader -> enumFileHeader.getHeaderInFile().equalsIgnoreCase(fileHeader))
-            .findFirst();
+    public static Optional<FileHeader> getFileHeaderEnumByValue(String fileHeader) {
+        return EnumUtils.getEnumList(FileHeader.class).stream().filter(
+                enumFileHeader -> enumFileHeader.getHeaderInFile().equalsIgnoreCase(fileHeader))
+                .findFirst();
     }
 
 }

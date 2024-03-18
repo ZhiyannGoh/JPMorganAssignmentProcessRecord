@@ -35,7 +35,7 @@ public class RecordConsumer {
                     break;
                 }
                 records.add(record);
-                // logger.info(Thread.currentThread().getName() + " consumed: " + record);
+                logger.debug(Thread.currentThread().getName() + " consumed: " + record);
 
             } catch (InterruptedException e) {
                 String message = "InterruptedException while consuming record";
