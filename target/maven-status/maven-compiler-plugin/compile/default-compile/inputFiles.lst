@@ -1,0 +1,17 @@
+/Users/tiffanyyeo/Documents/Codes/processor/src/main/java/com/jpmorgan/processor/handlers/FileUploadHandler.java
+/Users/tiffanyyeo/Documents/Codes/processor/src/main/java/com/jpmorgan/processor/models/MorganFile.java
+/Users/tiffanyyeo/Documents/Codes/processor/src/main/java/com/jpmorgan/processor/writer/IAggregatedWriter.java
+/Users/tiffanyyeo/Documents/Codes/processor/src/main/java/com/jpmorgan/processor/constants/FileHeader.java
+/Users/tiffanyyeo/Documents/Codes/processor/src/main/java/com/jpmorgan/processor/models/MorganBankList.java
+/Users/tiffanyyeo/Documents/Codes/processor/src/main/java/com/jpmorgan/processor/models/http/FileUploadResponse.java
+/Users/tiffanyyeo/Documents/Codes/processor/src/main/java/com/jpmorgan/processor/ProcessorApplication.java
+/Users/tiffanyyeo/Documents/Codes/processor/src/main/java/com/jpmorgan/processor/handlers/RequestProcessorHandler.java
+/Users/tiffanyyeo/Documents/Codes/processor/src/main/java/com/jpmorgan/processor/utilities/RecordProducer.java
+/Users/tiffanyyeo/Documents/Codes/processor/src/main/java/com/jpmorgan/processor/handlers/FileProcessorHandler.java
+/Users/tiffanyyeo/Documents/Codes/processor/src/main/java/com/jpmorgan/processor/utilities/FileSystemUtils.java
+/Users/tiffanyyeo/Documents/Codes/processor/src/main/java/com/jpmorgan/processor/handlers/FileHeaderHandler.java
+/Users/tiffanyyeo/Documents/Codes/processor/src/main/java/com/jpmorgan/processor/handlers/FileAggregatorHandler.java
+/Users/tiffanyyeo/Documents/Codes/processor/src/main/java/com/jpmorgan/processor/handlers/FilePostHandler.java
+/Users/tiffanyyeo/Documents/Codes/processor/src/main/java/com/jpmorgan/processor/dto/FileDto.java
+/Users/tiffanyyeo/Documents/Codes/processor/src/main/java/com/jpmorgan/processor/apis/UploadFileApi.java
+/Users/tiffanyyeo/Documents/Codes/processor/src/main/java/com/jpmorgan/processor/utilities/RecordConsumer.java
