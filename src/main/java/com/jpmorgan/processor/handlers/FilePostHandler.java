@@ -61,13 +61,3 @@ public class FilePostHandler extends FileProcessorHandler {
     }
 
 }
-
-/**
- * boolean isValidBank = EnumUtils.isValidEnumIgnoreCase(MorganBankList.class, e.getKey()); if
- * (isValidBank) { MorganBankList bank = EnumUtils.getEnumIgnoreCase(MorganBankList.class,
- * e.getKey()); BankCodeWithUniqueCustomer bankCode = BankCodeWithUniqueCustomer.builder()
- * .bankName(bank.getBankName()) .country(bank.getCountry()) .uniqueCustomerCount(e.getValue())
- * .build();
- *
- * } else { logger.warn("Bank not recognized: " + en.getKey()); }
- */
