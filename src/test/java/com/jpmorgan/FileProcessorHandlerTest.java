@@ -1,3 +1,4 @@
+package com.jpmorgan;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.mockStatic;
 import org.assertj.core.util.Lists;
@@ -15,13 +16,13 @@ import com.jpmorgan.processor.handlers.FileProcessorHandler;
 public class FileProcessorHandlerTest {
 
     @Mock
-    FileHeaderHandler fileHeaderHandler;
+    FileHeaderHandler fileHeaderHandlerMock;
 
     @Mock
-    FileAggregatorHandler fileAggregatorHandler;
+    FileAggregatorHandler fileAggregatorHandlerMock;
 
     @Mock
-    FilePostHandler filePostHandler;
+    FilePostHandler filePostHandlerMock;
 
     @Test
     public void testChaining() {
@@ -29,10 +30,10 @@ public class FileProcessorHandlerTest {
                 mockStatic(FileProcessorHandler.class)) {
         }
         FileProcessorHandler
-                .chain(Lists.list(fileHeaderHandler, fileAggregatorHandler, filePostHandler));
+                .chain(Lists.list(fileHeaderHandlerMock, fileAggregatorHandlerMock, filePostHandlerMock));
 
-        assertTrue(fileHeaderHandler.nextHandler == fileAggregatorHandler);
-        assertTrue(fileAggregatorHandler.nextHandler == filePostHandler);
-        assertTrue(filePostHandler.nextHandler == null);
+        assertTrue(fileHeaderHandlerMock.nextHandler == fileAggregatorHandlerMock);
+        assertTrue(fileAggregatorHandlerMock.nextHandler == filePostHandlerMock);
+        assertTrue(filePostHandlerMock.nextHandler == null);
     }
 }

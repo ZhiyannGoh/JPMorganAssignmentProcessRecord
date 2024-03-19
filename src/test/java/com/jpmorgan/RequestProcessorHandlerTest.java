@@ -27,16 +27,16 @@ public class RequestProcessorHandlerTest {
     RequestProcessorHandler requestProcessorHandler;
 
     @Mock
-    FileUploadHandler fileUploadHandler;
+    FileUploadHandler fileUploadHandlerMock;
 
     @Mock
-    FileHeaderHandler fileHeaderHandler;
+    FileHeaderHandler fileHeaderHandlerMock;
 
     @Mock
-    FileAggregatorHandler fileAggregatorHandler;
+    FileAggregatorHandler fileAggregatorHandlerMock;
 
     @Mock
-    FilePostHandler filePostHandler;
+    FilePostHandler filePostHandlerMock;
 
 
     @Test
@@ -50,7 +50,7 @@ public class RequestProcessorHandlerTest {
         FileProcessorHandler.chain(Collections.emptyList());
 
         requestProcessorHandler.getAggregatedData(fileMock);
-        verify(fileUploadHandler, times(1)).handleRequest(any());
+        verify(fileUploadHandlerMock, times(1)).handleRequest(any());
     }
 
 
